@@ -20,8 +20,7 @@ public class ExecutionOrderSample2 : MonoBehaviour
     }
 
     private void GenerateRandomValues()
-    {
-        
+    {        
         _randomValues = Enumerable.Range(0, 20).Select(x => _random.Next(0, 300)).ToArray();
     }
 

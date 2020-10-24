@@ -10,7 +10,12 @@ public class ExecutionOrderSample1 : MonoBehaviour
     private void Awake()
     {
         _sample2 = FindObjectOfType<ExecutionOrderSample2>();
-
-        _randomValue = _sample2.GetRandomValue();
     }
+
+    void Start() 
+    {
+        _randomValue = _sample2.GetRandomValue();
+        //print($"Random value: {_randomValue}");
+    }
+
 }
